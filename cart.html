@@ -1,0 +1,308 @@
+<!doctype html> 
+<html lang="en"> 
+  <head> 
+    <!-- Required meta tags --> 
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+ <!-- style.css For Custom Styling  --> 
+<link rel="stylesheet" href="C:\Users\likit\OneDrive\Desktop\internship studio\style.css"> 
+    <!-- Bootstrap CSS --> 
+    <link rel="stylesheet" 
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> 
+ <!-- fontawesome cdn For Icons --> 
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" /> 
+  <title>E-commerce</title> 
+  </head> 
+  <body id="top"> 
+    <!-- ============== Header Menu Section Starts Here ============== -->
+    <section class="header_menu" id="header_menu">
+        <div class="container-fluid px-0 shadow">
+              <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+               <!-- Logo -->
+                <a class="navbar-brand pl-5 pl-small-0" href="bootstrap.html">
+                    <img src="logos.png" class="img-fluid" width="120px" alt="logo"></a> 
+  <!-- Navbar Toggle Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="bootstrap.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.html">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="category.html">Category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <!-- Search Button -->
+                     <div class="d-flex align-items-center">
+                     <div class="search mr-3">
+        <a href="search.html" class="btn btn-sm btn-outline-primary">Search</a>
+    </div>
+    <!-- Shopping Cart -->
+    <div class="cart">
+        <a href="cart.html">
+            <i class="fas fa-shopping-cart fa-2x"></i>
+            <span class="badge badge-pill badge-primary">24</span>
+        </a>
+    </div>
+    </div>
+</div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <!-- ============== Header Menu Section Ends Here ============== -->
+           <!-- ==============cart starts here============== --> 
+    <section class="cart py-5 my-5" id="cart"> 
+        <div class="container "> 
+            <div class="section_title text-center mb-5"> 
+                <h1 class="text-capitalize">Cart</h1> 
+            </div> 
+            <div class="row bg_cart_1 rounded"> 
+                <!--Grid column--> 
+                <div class="col-md-8 border-right"> 
+                    <!-- Card --> 
+                    <div class="mb-3"> 
+                        <div class="pt-4"> 
+                            <h5 class="mb-4">Cart (<span>2</span> items)</h5> 
+                            <div class="row mb-4"> 
+                                <div class="col-md-5 col-lg-3 col-xl-3"> 
+                                    <div class="rounded mb-3 mb-md-0"> 
+                                        <img class="img-fluid w-100 rounded" src="https://assets.ajio.com/medias/sys_master/root/20240913/KyNf/66e468c41d763220fae63b94/-473Wx593H-700420474-green-MODEL.jpg" 
+                                            alt="Sample"> 
+                                    </div> 
+                                </div> 
+                                <div class="col-md-7 col-lg-9 col-xl-9"> 
+                                    <div> 
+                                        <div class="d-flex justify-content-between"> 
+                                            <div> 
+                                                <h5>Green sweatShirt</h5> 
+                                                <p class="mb-3 text-muted text-uppercase small">sweatShirt - green</p> 
+                                                <p class="mb-2 text-muted text-uppercase small">Color: green</p> 
+                                                <p class="mb-3 text-muted text-uppercase small">Size: M</p> 
+                                                 <p class="mb-2 product-name">Green SweatShirt</p>
+
+                                            </div> 
+                                            <div> 
+                                                
+                                                <small class="form-text text-muted text-center"> 
+                                                    (Note, 1 piece) 
+                                                </small> 
+                                            </div> 
+                                        </div> 
+                                        <div class="d-flex justify-content-between align-items-center"> 
+                                            <div> 
+                                                <a href="javascript:;" type="button"
+   class="remove-item small text-uppercase mr-3" data-index="0">
+   <i class="fas fa-trash-alt mr-1"></i> Remove item
+</a>
+
+                                            </div> 
+                                            <input class="quantity text-center product-qty" min="0" max="10" name="quantity" 
+       value="1" type="number" data-price="25.98">
+<p class="mb-0 product-total"><strong>₹25.98</strong></p>
+
+ 
+                                        </div> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                            <hr class="mb-4"> 
+                            <div class="row mb-4"> 
+                                <div class="col-md-5 col-lg-3 col-xl-3"> 
+                                    <div class="rounded mb-3 mb-md-0"> 
+                                        <img class="img-fluid w-100 rounded" src="https://assets.ajio.com/medias/sys_master/root/20231227/B1UO/658b55e1afa4cf41f5edd749/-473Wx593H-466921309-green-MODEL.jpg" 
+                                            alt="Sample"> 
+                                    </div> 
+                                </div> 
+                                <div class="col-md-7 col-lg-9 col-xl-9"> 
+                                    <div> 
+                                        <div class="d-flex justify-content-between"> 
+                                            <div> 
+                                                <h5>green T-shirt</h5> 
+                                                <p class="mb-3 text-muted text-uppercase small">T-Shirt - green</p> 
+                                                <p class="mb-2 text-muted text-uppercase small">Color: green</p> 
+                                                <p class="mb-3 text-muted text-uppercase small">Size: M</p> 
+                                                <p class="mb-2 product-name">Green t-shirt</p>
+
+                                            </div> 
+                                        
+                                        </div> 
+                                        <div class="d-flex justify-content-between align-items-center"> 
+                                            <div> 
+<a href="javascript:;" type="button"
+   class="remove-item small text-uppercase mr-3" data-index="1">
+   <i class="fas fa-trash-alt mr-1"></i> Remove item
+</a>
+
+                                            </div> 
+                                            <input class="quantity text-center product-qty" min="0" max="10" name="quantity" 
+       value="1" type="number" data-price="25.98">
+<p class="mb-0 product-total"><strong>₹25.98</strong></p>
+
+                                        </div> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div> 
+                </div> 
+                <!--Grid column--> 
+ 
+                <!--Grid column--> 
+                <div class="col-md-4  rounded"> 
+                    <!-- Card --> 
+ 
+                    <div class="mb-3"> 
+                        <div class="pt-4"> 
+                            <h5 class="mb-3">Order summary</h5> 
+                            <ul class="list-group list-group-flush"> 
+                                <li 
+                                    class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-2"> 
+                                    
+                                     <span id="summary-name-0">Product name 1</span>
+                                    <span id="summary-qty-0">x1</span> 
+                                    <span id="summary-price-0">₹25.98</span> 
+                                </li> 
+                                <li 
+                                    class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-2"> 
+                                    
+                                     <span id="summary-name-0">Product name 1</span>
+                                    <span id="summary-qty-1">x1</span> 
+                                    <span id="summary-price-1">₹25.98</span>
+                                </li> 
+                                <li 
+                                    class="list-group-item d-flex justify-content-between align-items-center border-top px-0 mb-3"> 
+                                    <div> 
+                                        <strong>Total amount</strong> 
+                                        <strong> 
+                                            <p class="mb-0">(including VAT)</p> 
+                                        </strong> 
+                                    </div> 
+                                    <span id="cart-total"><strong>₹53.98</strong></span> 
+                                </li> 
+                            </ul> 
+                            <a href="checkout.html" class="btn btn-primary btn-block">Go to Checkout</a> 
+                        </div> 
+</div> 
+<!-- Card --> 
+</div> 
+<!--Grid column--> 
+</div> 
+</div> 
+</section> 
+
+<!-- ==============cart ends here============== --> 
+     
+
+ <section class="footer_section pt-5 pb-2 mt-5" id="footer_section"style="background-color: white;"></section>
+ <div class="backtop">
+    <a id="button" href="#top" class="btn btn-lg btn-outline-danger" role="button">
+        <i class="fas fa-chevron-up text-dark"></i>
+    </a>
+ </div>
+ <!--footer ends here-->
+    <!-- Optional JavaScript --> 
+    <!-- jQuery first, then Popper.js, then Bootstrap JS --> 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> 
+    <script 
+src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> 
+    <script 
+src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> 
+<script>
+  function updateCart() {
+    let total = 0;
+    const products = document.querySelectorAll('.product-qty');
+
+    products.forEach((input, index) => {
+      const pricePerUnit = parseFloat(input.dataset.price);
+      const qty = parseInt(input.value);
+      const productTotal = pricePerUnit * qty;
+
+      // Update product total in cart
+      const totalElement = input.closest('.row').querySelector('.product-total');
+      if (totalElement) {
+        totalElement.innerHTML = `<strong>₹${productTotal.toFixed(2)}</strong>`;
+      }
+
+      // Update summary
+      const summaryQty = document.getElementById(`summary-qty-${index}`);
+      const summaryPrice = document.getElementById(`summary-price-${index}`);
+      if (summaryQty) summaryQty.innerText = `x${qty}`;
+      if (summaryPrice) summaryPrice.innerText = `₹${productTotal.toFixed(2)}`;
+
+      // Add to total
+      total += productTotal;
+    });
+
+    // Update total
+    const cartTotal = document.getElementById('cart-total');
+    if (cartTotal) {
+      cartTotal.innerHTML = `<strong>₹${total.toFixed(2)}</strong>`;
+    }
+  }
+
+  // Attach event listeners to quantity inputs
+  document.querySelectorAll('.product-qty').forEach(input => {
+    input.addEventListener('change', updateCart);
+    input.addEventListener('input', updateCart);
+  });
+
+  // Attach event listeners to remove buttons
+  document.querySelectorAll('.remove-item').forEach(btn => {
+    btn.addEventListener('click', function () {
+      const index = this.dataset.index;
+      const row = this.closest('.row');
+      
+      // Remove cart row
+      if (row) row.remove();
+
+      // Clear summary entry
+      const qtyEl = document.getElementById(`summary-qty-${index}`);
+      const priceEl = document.getElementById(`summary-price-${index}`);
+      if (qtyEl) qtyEl.innerText = 'x0';
+      if (priceEl) priceEl.innerText = '₹0.00';
+
+      // Recalculate total
+      updateCart();
+    });
+  });
+
+  // Initial update
+  updateCart();
+  const cartItems = [
+  {
+    name: "Green SweatShirt",
+    quantity: 2,
+    price: 25.98
+  },
+  {
+    name: "green T-shirt",
+    quantity: 1,
+    price: 25.98
+  }
+];
+
+// Store in localStorage
+localStorage.setItem("cartItems", JSON.stringify(cartItems));
+
+</script>
+
+</body> 
+</html>
+
+

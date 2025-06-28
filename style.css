@@ -1,0 +1,256 @@
+/* ========== Global Styles ========== */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #e3f2fd, #e1f5fe); /* Light Sky Blue to Light Cyan */
+  color: #0d1b2a; /* Deep Navy */
+  animation: fadeIn 1s ease-in;
+  margin: 0;
+  padding: 0;
+}
+
+/* ========== Animations ========== */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.section_title,
+.products,
+.card,
+.testimonial-section,
+.footer_section {
+  animation: slideUp 1s ease-out;
+}
+
+.card:hover,
+.btn:hover {
+  animation: pulse 0.6s ease-in-out;
+}
+
+/* ========== Headers & Links ========== */
+h1, h2, h3, h4, h5, h6 {
+  color: #3f51b5; /* Indigo Blue */
+  margin: 0;
+}
+
+h1 { font-size: 2.5rem; font-weight: bold; }
+h2 { font-size: 2rem; font-weight: bold; }
+h3 { font-size: 1.75rem; font-weight: bold; }
+h4, h5, h6 { font-weight: normal; }
+
+a {
+  color: #3f51b5;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #2196f3; /* Bright Blue */
+}
+
+/* ========== Header Menu ========== */
+.header_menu {
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: 2px solid #3f51b5;
+  backdrop-filter: blur(6px);
+}
+
+/* ========== Navbar ========== */
+.navbar-light .navbar-nav .nav-link {
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  color: #3f51b5;
+  transition: all 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: white;
+  background-color: rgba(63, 81, 181, 0.3); /* Light Indigo */
+  border-radius: 0.5rem;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: #3f51b5;
+  background-color: rgba(63, 81, 181, 0.2);
+}
+
+/* ========== Buttons ========== */
+.btn-primary {
+  background-color: #2196f3; /* Bright Blue */
+  border: none;
+  border-radius: 25px;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #64b5f6; /* Lighter Blue */
+}
+
+.btn-outline-primary {
+  border-color: #2196f3;
+  color: #2196f3;
+  border-radius: 25px;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-outline-primary:hover {
+  background-color: #2196f3;
+  color: white;
+}
+
+/* ========== Footer Button ========== */
+.footer_button {
+  background-color: #3f51b5;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.footer_button:hover {
+  background-color: #303f9f;
+}
+
+/* ========== Forms ========== */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+  border: 1px solid #bbdefb;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  background-color: #fff;
+  color: #0d1b2a;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #2196f3;
+  box-shadow: 0 0 0 0.2rem rgba(33, 150, 243, 0.25);
+}
+
+/* ========== Sections ========== */
+.section_title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section_title h1,
+.section_title h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #3f51b5;
+}
+
+/* ========== Checkout Block ========== */
+.bg_checkout_1 {
+  background: linear-gradient(135deg, #e1f5fe, #e3f2fd);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ========== Cards & Tables ========== */
+.card, .border, .shadow, .form-control, .form-group, .table, .rounded {
+  background: rgba(225, 245, 254, 0.9); /* Light Blue */
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+  transition: transform 0.3s ease;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #e3f2fd;
+}
+
+/* ========== Products Section ========== */
+.products {
+  background: linear-gradient(135deg, #e3f2fd, #e1f5fe);
+  border-radius: 16px;
+  padding: 3rem 1.5rem;
+  box-shadow: 0 0 20px rgba(63, 81, 181, 0.1);
+}
+
+/* ========== Testimonial Section ========== */
+.testimonial-section {
+  background: linear-gradient(135deg, #e3f2fd, #e1f5fe);
+  border-radius: 16px;
+  padding: 3rem 1.5rem;
+  box-shadow: 0 0 15px rgba(63, 81, 181, 0.15);
+}
+
+.testimonial-section p {
+  color: #394867;
+  font-style: italic;
+}
+
+.testimonial-section h4,
+.testimonial-section h6 {
+  color: #3f51b5;
+}
+
+/* ========== Footer ========== */
+
+
+/* ========== Footer Links ========== */
+.footer_links ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer_links ul li a {
+  color: #3f51b5;
+}
+
+.footer_links ul li a:hover {
+  color: #2196f3;
+  text-decoration: underline;
+}
+
+/* ========== Back to Top Button ========== */
+.backtop #button {
+  background: #3f51b5;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 15px;
+  transition: background-color 0.3s;
+}
+
+.backtop #button:hover {
+  background: #303f9f;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 768px) {
+  .navbar-brand {
+    padding-left: 1rem;
+  }
+
+  .footer_section .col-6 {
+    margin-bottom: 2rem;
+  }
+
+  .section_title h1,
+  .section_title h2 {
+    font-size: 2rem;
+  }
+}

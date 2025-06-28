@@ -1,0 +1,395 @@
+<!doctype html> 
+<html lang="en"> 
+  <head> 
+    <!-- Required meta tags --> 
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+ <!-- style.css For Custom Styling  --> 
+<link rel="stylesheet" href="C:\Users\likit\OneDrive\Desktop\internship studio\style.css"> 
+    <!-- Bootstrap CSS --> 
+    <link rel="stylesheet" 
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> 
+ <!-- fontawesome cdn For Icons --> 
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" /> 
+ 
+    <title>E-commerce</title> 
+  </head> 
+  <body id="top"> 
+    <!-- ============== Header Menu Section Starts Here ============== -->
+    <section class="header_menu" id="header_menu">
+        <div class="container-fluid px-0 shadow">
+          <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+                
+              
+                 <!-- Logo -->
+                <a class="navbar-brand pl-5 pl-small-0" href="index.html">
+                    <img src="logos.png"
+                    class="img img-fluid" width="120px" alt="logo">
+                </a>
+              
+  <!-- Navbar Toggle Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.html">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="category.html">Category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+
+
+                    <!-- Search Button -->
+                     <div class="d-flex align-items-center">
+                     <div class="search mr-3">
+        <a href="search.html" class="btn btn-sm btn-outline-primary">Search</a>
+    </div>
+
+    <!-- Shopping Cart -->
+    <div class="cart">
+        <a href="cart.html">
+            <i class="fas fa-shopping-cart fa-2x"></i>
+            <span class="badge badge-pill badge-primary">24</span>
+        </a>
+    </div>
+    </div>
+</div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <!-- ============== Header Menu Section Ends Here ============== -->
+     
+  <section class="products py-5 my-5" id="products"> 
+        <div class="container "> 
+            <div class="section_title text-center mb-5"> 
+                <h1 class="text-capitalize">Products</h1> 
+            </div> 
+            <div class="row"> 
+                <div class="col-md-3 border-right mb-small-5"> 
+                    <h4 class="mb-5 border-bottom">Filters</h4> 
+                    <div class="mb-5"> 
+                        <label><b>Category</b></label> 
+                        <ul class="list-group"> 
+                           
+                            <li class="list-group-item">
+    <input type="checkbox" class="mr-2"> Category 1
+</li>
+<li class="list-group-item">
+    <input type="checkbox" class="mr-2"> Category 2
+</li>
+
+<li class="list-group-item">
+    <input type="checkbox" class="mr-2"> Category 3
+</li>
+
+<li class="list-group-item">
+    <input type="checkbox" class="mr-2"> Category 4
+</li>
+
+<li class="list-group-item">
+    <input type="checkbox" class="mr-2"> Category 5
+</li>
+
+                        </ul> 
+                    </div> 
+                    <div> 
+                        <!-- Sorting Options -->
+<div class="sort-options mb-4 text-right">
+  <label for="sort" class="mr-2">Sort By:</label>
+  <select id="sort" class="form-control d-inline-block w-auto">
+    <option value="default">Default</option>
+    <option value="name-asc">A to Z</option>
+    <option value="name-desc">Z to A</option>
+    <option value="rating">Most Rated</option>
+    <option value="price-low-high">Price: Low to High</option>
+    <option value="price-high-low">Price: High to Low</option>
+  </select>
+</div>
+
+                        <form>
+                       <div class="form-group">
+    <label><b>Price: ₹<span id="priceValue">100</span></b></label>
+    <input 
+        type="range" 
+        min="100" 
+        max="1000" 
+        step="50" 
+        class="form-control-range" 
+        id="priceRange"
+        oninput="document.getElementById('priceValue').textContent = this.value">
+                       </form>
+</div>
+<div class="d-flex justify-content-between">
+    <label>₹100</label>
+    <label>₹1000</label>
+</div>
+
+<!-- Size Filter -->
+<div class="filter-section mb-3">
+  <h5>Size</h5>
+  <div>
+    <label><input type="checkbox" name="size" value="XS"> XS</label><br>
+    <label><input type="checkbox" name="size" value="S"> S</label><br>
+    <label><input type="checkbox" name="size" value="M"> M</label><br>
+    <label><input type="checkbox" name="size" value="L"> L</label><br>
+   <label><input type="checkbox" name="size" value="XL"> XL</label><br>
+ <label><input type="checkbox" name="size" value="XXL"> XXL</label><br>
+  </div>
+</div>
+
+                    </div> 
+                </div> 
+                <div class="col-md-9"> 
+ 
+                    <div class="row mb-5"> 
+                        <div class="col-md-4 col-12"> 
+                            <div class="single_product shadow text-center p-1"> 
+                                <div class="product_img"> 
+                                    <a href="product_detail.html"><img src="https://assets.ajio.com/medias/sys_master/root/20240913/KyNf/66e468c41d763220fae63b94/-473Wx593H-700420474-green-MODEL.jpg" class="img img-fluid" 
+                                            alt=""></a> 
+                                </div> 
+                                <div class="product-caption my-3"> 
+                                    <div class="product-ratting"> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="far fa-star"></i> 
+                                        <i class="far fa-star"></i> 
+                                    </div> 
+                                    <h5><a href="product_detail.html">Green Dress with details</a></h5> 
+                                    <div class="price"> 
+                                        <b><span class="mr-1">₹</span><span>400</span></b> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                        <div class="col-md-4 col-12"> 
+                            <div class="single_product shadow text-center p-1 mt-small-5 mb-small-5"> 
+                                <div class="product_img"> 
+                                    <a href="product_detail.html"><img src="https://assets.ajio.com/medias/sys_master/root/20231230/cpvj/658f2252ddf7791519f69091/-473Wx593H-466931544-green-MODEL.jpg" class="img img-fluid" 
+                                            alt=""></a> 
+                                    <div class="new_product"> 
+ 
+                                        <span class="badge py-2 px-3 badge-pill badge-danger">New</span> 
+                                    </div> 
+                                </div> 
+                                <div class="product-caption my-3"> 
+                                    <div class="product-ratting"> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="far fa-star"></i> 
+                                        <i class="far fa-star"></i> 
+                                    </div> 
+                                    <h5><a href="product_detail.html">Green Dress with details</a></h5> 
+                                    <div class="price"> 
+                                        <b><span class="mr-1">₹</span><span>400</span></b> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                        <div class="col-md-4 col-12"> 
+                            <div class="single_product shadow text-center p-1"> 
+                                <div class="product_img"> 
+                                    <a href="product_detail.html"><img src="https://assets.ajio.com/medias/sys_master/root/20231227/B1UO/658b55e1afa4cf41f5edd749/-473Wx593H-466921309-green-MODEL.jpg" class="img img-fluid" 
+                                            alt=""></a> 
+                                    <div class="new_product"> 
+                                        <span class="badge py-2 px-3 badge-pill badge-danger">New</span> 
+                                    </div> 
+                                </div> 
+                                <div class="product-caption my-3"> 
+                                    <div class="product-ratting"> 
+ 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="far fa-star"></i> 
+                                        <i class="far fa-star"></i> 
+                                    </div> 
+                                    <h5><a href="product_detail.html">Green Dress with details</a></h5> 
+                                    <div class="price"> 
+                                        <b><span class="mr-1">₹</span><span>400</span></b> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div> 
+                    <div class="row"> 
+                        <div class="col-md-4 col-12"> 
+                            <div class="single_product shadow text-center p-1"> 
+                                <div class="product_img"> 
+                                    <a href="product_detail.html"><img src="https://assets.ajio.com/medias/sys_master/root/20230602/1IFG/64795fa2d55b7d0c633ce0a8/-1117Wx1400H-461925023-green-MODEL.jpg" class="img img-fluid" alt=""></a> 
+                                    <div class="new_product"> 
+                                        <span class="badge py-2 px-3 badge-pill badge-danger">New</span> 
+                                    </div> 
+                                </div> 
+                                <div class="product-caption my-3"> 
+                                    <div class="product-ratting"> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="far fa-star"></i> 
+                                        <i class="far fa-star"></i> 
+                                    </div> 
+                                    <h5><a href="product_detail.html">Green Dress with details</a></h5> 
+                                    <div class="price"> 
+                                        <b><span class="mr-1">₹</span><span>400</span></b> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                        <div class="col-md-4 col-12"> 
+                            <div class="single_product shadow text-center p-1 mt-small-5 mb-small-5"> 
+                                <div class="product_img"> 
+                                    <a href="product_detail.html"><img src="https://assets.ajio.com/medias/sys_master/root/20210404/ucxV/606a2b6d7cdb8c1f1493dd97/-1117Wx1400H-461383530-green-MODEL.jpg" class="img img-fluid" alt=""></a> 
+                                    <div class="new_product"> 
+                                        <span class="badge py-2 px-3 badge-pill badge-danger">New</span> 
+                                    </div> 
+                                </div> 
+                                <div class="product-caption my-3"> 
+                                    <div class="product-ratting"> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="far fa-star"></i> 
+                                        <i class="far fa-star"></i> 
+                                    </div> 
+                                    <h5><a href="product_detail.html">Green Dress with details</a></h5> 
+                                    <div class="price"> 
+ 
+                                        <b><span class="mr-1">₹</span><span>400</span></b> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                        <div class="col-md-4 col-12"> 
+                            <div class="single_product shadow text-center p-1"> 
+                                <div class="product_img"> 
+                                    <a href="product_detail.html"><img src="https://assets.ajio.com/medias/sys_master/root/20240311/mQbf/65ee957316fd2c6e6a4bcfb1/-473Wx593H-466926604-green-MODEL.jpg" class="img img-fluid" 
+                                            alt=""></a> 
+                                </div> 
+                                <div class="product-caption my-3"> 
+                                    <div class="product-ratting"> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="far fa-star"></i> 
+                                        <i class="far fa-star"></i> 
+                                    </div> 
+                                    <h5><a href="product_detail.html">Green Dress with details</a></h5> 
+                                    <div class="price"> 
+                                        <b><span class="mr-1">₹</span><span>400</span></b> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </section> 
+<!-- ==============product ends here============== --> 
+ <!-- ==============footer starts here============== --> 
+  <section class="footer_section pt-5 pb-2" id="footer_section" style="background-color: white;"> 
+    <footer> 
+      <div class="container-fluid"> 
+        <div class="row"> 
+          <div class="col-md-3 col-6 pl-5 pl-small-15"> 
+            <div class="footer_title"> 
+              <a href="index.html"><img src="logos.png" width="150px" 
+class="img img-fluid" alt="logo"></a> 
+            </div> 
+            <div> 
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, totam est 
+illum ipsum quas ad 
+              dignissimos magni veritatis natus voluptatem. 
+            </div> 
+          </div> 
+          <div class="col-md-3 col-6"> 
+            <div class="footer_title pt-3 mb-3"> 
+              <h3>Quick Links</h3> 
+            </div> 
+            <div class="footer_links"> 
+              <ul> 
+                <li><a href="about.html">About</a></li> 
+                <li><a href="javascript:;">Offers & Discounts</a></li> 
+                <li><a href="javascript:;">Get Coupon</a></li> 
+                <li><a href="contact.html">Contact Us</a></li> 
+              </ul> 
+            </div> 
+          </div> 
+          <div class="col-md-3 col-6"> 
+            <div class="footer_title pt-3 mb-3"> 
+              <h3>New Products</h3> 
+            </div> 
+            <div class="footer_links"> 
+              <ul> 
+                <li><a href="javascript:;">Woman Cloth</a></li> 
+                <li><a href="javascript:;">Fashion Accessories</a></li> 
+                <li><a href="javascript:;">Man Accessories</a></li> 
+                <li><a href="javascript:;">Rubber made Toys</a></li> 
+              </ul> 
+            </div> 
+          </div> 
+          <div class="col-md-3 col-6"> 
+            <div class="footer_title pt-3 mb-3"> 
+              <h3>Support</h3> 
+            </div> 
+            <div class="footer_links"> 
+              <ul> 
+                <li><a href="javascript:;">Frequently Asked Questions</a></li> 
+                <li><a href="javascript:;">Terms & Conditions</a></li> 
+                <li><a href="javascript:;">Privacy Policy</a></li> 
+                <li><a href="javascript:;">Report a Payment Issue</a></li> 
+              </ul> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+      <div class="border-top"> 
+        <h6 class="text-center mt-3">Copyright ©2020 All rights reserved 
+        </h6> 
+      </div> 
+    </footer> 
+  </section> 
+  <div class="backtop"> 
+    <a id="button" href="#top" class="btn btn-lg btn-outline-danger" role="button"> 
+      <i class="fas fa-chevron-up text-dark"></i> 
+    </a> 
+  </div> 
+  <!-- ==============footer ends here============== --> 
+    <!-- Optional JavaScript --> 
+    <!-- jQuery first, then Popper.js, then Bootstrap JS --> 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+
+ OrCXaRkfj" crossorigin="anonymous"></script> 
+    <script 
+src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
+integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7ni
+ u735Sk7lN" crossorigin="anonymous"></script> 
+    <script 
+src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
+integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOM
+ MV+rV" crossorigin="anonymous"></script> 
+
+
+</body> 
+</html>
